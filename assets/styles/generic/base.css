@@ -1,0 +1,172 @@
+/***
+
+	BASE STYLESHEET version 1.0
+
+    The purpose of this style sheet is to provide a complete reset of styles and provide a few basic classes.
+
+    This stylesheet should be included on all pages (even if they drift from a standard template) and, as such,
+    does not contain any styles for the branding or layout. Branding and layout styles can be found in Generic.css.
+
+    @Authors
+    Graham Licence
+    http://blog.grahamlicence.co.uk
+    
+
+	-[Contents]------------------------
+	1. GLOBAL
+		1.0 Resetting styles
+		1.1 Common classes
+	-----------------------------------
+***/
+
+
+/****************************************
+	1.0 Resetting styles
+*/
+
+/* 
+	Tags not used: applet, big, kbd, s, samp, var, b, tt, center,
+	Either depreciated or not commonly used. 
+*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, cite, code, del, dfn, em, font, img, ins, q, small, strike, strong, sub, sup, u, i, dl, dt, dd, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, hgroup, mark, nav, section
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    background: transparent;
+    text-align: left;
+}
+/* format html5 tags for legacy browsers */
+article, aside, hgroup, nav, section
+{
+	display: block;
+}
+body /* define page styles using CSS specifity in page specific style sheets, eg body p {} */
+{
+    line-height: 1;
+    background-color: transparent;
+    color: #000;
+    /*Body font size set at 0.625em - only set font sizes on elements at bottom level, font size 12px = 1.2em*/
+    font: normal 0.625em Verdana, Arial, Helvetica, sans-serif;
+}
+/* format quotes */
+blockquote, q
+{
+	quotes: none;
+}
+blockquote
+{
+	padding: 10px;
+}
+blockquote:before, q:before { content:"\2018"; }
+blockquote:after, q:after { content:"\2019"; }
+
+del 
+{ 
+	text-decoration: line-through; 
+}
+ins 
+{ 
+	text-decoration: none; 
+}
+mark 
+{ 
+	background-color:#ff9; 
+	color:#000; 
+	font-style:italic; 
+	font-weight:bold; 
+}
+
+/* sub/superscripts */
+
+sub, sup
+{
+    line-height:normal;
+    font-size: 0.7em;
+}
+sub { vertical-align: sub; }
+sup { vertical-align:top; }
+
+/* tables still need 'cellspacing="0"' in the markup */
+table
+{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* 
+	Lists set to default styles for CMS generated content
+	remember to define font sizes 
+*/
+
+ul, ol
+{
+    margin: 0 0 0 1.5em;
+    padding: 0 0 0 1.5em;
+    line-height:1.5em;
+}
+
+ul { list-style: disc outside none; }
+
+ul ul { list-style: circle outside none; }
+
+ul ul ul { list-style: square outside none; }
+
+ol { list-style: decimal outside none; }
+
+ol ol { list-style: upper-roman outside none; }
+
+ol ol ol { list-style: lower-alpha outside none; }
+
+nav ol,
+nav ul,
+form ul
+{
+	list-style: none;
+	margin-left: 0;
+	padding-left: 0;
+	overflow: hidden;
+}
+
+nav ol li,
+nav ul li
+{
+	float: left;
+	margin-right: 10px;
+}
+
+/****************************************
+	1.1 Common classes
+*/
+
+.clickable /*used for js*/
+{
+    cursor: pointer;
+}
+
+div.hr
+{
+    border-top: 1px solid #9e9e9e;
+    line-height: 0px;
+    height: 0px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+div.hr hr
+{
+    display: none;
+}
+
+/* debugging, used in js */
+font.debug
+{
+    background:#FFFF00;
+    color:#F00;
+}
+.debug
+{
+	border:1px solid #F00;
+}

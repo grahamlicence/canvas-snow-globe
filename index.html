@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script type="text/javascript">document.documentElement.className = 'js';</script>
+        
+        <title>Canvas snow globe</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+        <meta name="description" content="Canvas snow globe, an HTML5 experiment." />
+        <link href="assets/styles/generic/base.css" rel="stylesheet" type="text/css" media="screen" />
+        <link href="assets/styles/generic/generic.css" rel="stylesheet" type="text/css" media="screen" />
+
+    </head>
+    <body>
+        <div class="wrapper">
+            <canvas id="example" width="300" height="300" >
+                <div class="nocanvas">
+                    <p>Sorry, this experiment isn't for you, but this snowman cartoon is!</p>
+                    <img src="assets/images/snowman.jpg">
+                </div>
+            </canvas>
+            <div class="globe" id="touch"></div>
+            <div class="assets">
+                <img src="assets/images/santa.jpg" id="photo" />
+                <img src="assets/images/snow1.png" id="snow0" />
+                <img src="assets/images/snow2.png" id="snow1" />
+            </div>
+
+            <aside>
+                <h1>Make it snow!</h1>
+                <p>
+                    Grab your browser window and shake..
+                </p>
+                <img src="assets/images/move.jpg" alt="" />
+            </aside>
+        </div>
+        <footer>
+            <p>By <a href="http://blog.grahamlicence.co.uk/">graham</a></p>
+        </footer>
+
+        <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+        <script>!window.jQuery && document.write('<script src="assets/scripts/jquery-1.4.4.min.js"><\/script>')</script>
+        <script>
+            (function() {
+                var script = document.createElement("script")
+                script.src = "assets/scripts/s.js";
+                document.body.appendChild(script);
+            })();
+        </script>
+        <a href="https://github.com/grahamlicence/canvas-snow-globe"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://github-camo.global.ssl.fastly.net/c6625ac1f3ee0a12250227cf83ce904423abf351/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_gray_6d6d6d.png"></a>
+    </body>
+</html>
+
+
